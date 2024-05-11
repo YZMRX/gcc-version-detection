@@ -1,0 +1,3 @@
+	.file	"2.cpp"
+	.text
+	.section .rdata,"dr"

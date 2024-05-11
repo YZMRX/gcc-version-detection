@@ -1,0 +1,9 @@
+L4:
+	movl	-4(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-8(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movb	$45, (%eax)
+	addl	$1, -8(%ebp)

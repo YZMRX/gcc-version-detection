@@ -1,0 +1,6 @@
+__ZStL19piecewise_construct:
+	.space 1
+.lcomm __ZStL8__ioinit,1,1
+	.globl	_board
+	.bss
+	.align 32

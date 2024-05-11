@@ -1,0 +1,28 @@
+__ZN4Boss4fireER8E_Bullet:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$24, %esp
+	movl	%ecx, -12(%ebp)
+	movl	8(%ebp), %eax
+	movb	$1, 12(%eax)
+	movl	-12(%ebp), %eax
+	movl	12(%eax), %eax
+	leal	-20(%eax), %edx
+	movl	8(%ebp), %eax
+	movl	%edx, 4(%eax)
+	movl	-12(%ebp), %eax
+	movl	16(%eax), %edx
+	movl	8(%ebp), %eax
+	movl	%edx, 8(%eax)
+	call	_clock
+	movl	%eax, %edx
+	movl	8(%ebp), %eax
+	movl	%edx, (%eax)
+	nop
+	leave
+	ret	$4
+	.section	.text$_ZN4Boss4moveEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN4Boss4moveEv
+	.def	__ZN4Boss4moveEv;	.scl	2;	.type	32;	.endef

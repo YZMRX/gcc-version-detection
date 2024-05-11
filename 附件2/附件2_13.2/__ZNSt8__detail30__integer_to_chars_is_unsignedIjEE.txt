@@ -1,0 +1,2 @@
+__ZNSt8__detail30__integer_to_chars_is_unsignedIjEE:
+	.byte	1

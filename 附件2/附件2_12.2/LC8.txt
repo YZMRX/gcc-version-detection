@@ -1,0 +1,2 @@
+LC8:
+	.ascii "pause\0"

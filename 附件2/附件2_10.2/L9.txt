@@ -1,0 +1,12 @@
+L9:
+	cmpl	$15, -16(%ebp)
+	jg	L8
+	movl	-16(%ebp), %eax
+	addl	$64, %eax
+	movl	%eax, %edx
+	movl	-16(%ebp), %eax
+	sall	$4, %eax
+	addl	$_board, %eax
+	movb	%dl, (%eax)
+	addl	$1, -16(%ebp)
+	jmp	L9

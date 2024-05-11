@@ -1,0 +1,59 @@
+_main:
+	leal	4(%esp), %ecx
+	andl	$-16, %esp
+	pushl	-4(%ecx)
+	pushl	%ebp
+	movl	%esp, %ebp
+	pushl	%esi
+	pushl	%ebx
+	pushl	%ecx
+	subl	$380, %esp
+	call	___main
+	movl	$4, 8(%esp)
+	movl	$550, 4(%esp)
+	movl	$640, (%esp)
+	call	__Z9initgraphiii
+	movl	$65024, (%esp)
+	call	__Z12settextcolorm
+	movl	$LC0, 8(%esp)
+	movl	$0, 4(%esp)
+	movl	$35, (%esp)
+	call	__Z12settextstyleiiPKc
+	movl	$LC1, 8(%esp)
+	movl	$200, 4(%esp)
+	movl	$150, (%esp)
+	call	__Z9outtextxyiiPKc
+	movl	$3000, (%esp)
+	movl	__imp__Sleep@4, %eax
+	call	*%eax
+	subl	$4, %esp
+	movl	$0, (%esp)
+	call	__Z12setlinecolorm
+	movl	$0, (%esp)
+	call	__Z12setfillcolorm
+	movl	$550, 12(%esp)
+	movl	$640, 8(%esp)
+	movl	$0, 4(%esp)
+	movl	$0, (%esp)
+	call	__Z9rectangleiiii
+	movl	$550, 12(%esp)
+	movl	$640, 8(%esp)
+	movl	$0, 4(%esp)
+	movl	$0, (%esp)
+	call	__Z13fillrectangleiiii
+	movl	$16777215, (%esp)
+	call	__Z12setlinecolorm
+	movl	$16777215, (%esp)
+	call	__Z12setfillcolorm
+	call	_clock
+	movl	%eax, -28(%ebp)
+	call	_clock
+	movl	%eax, -32(%ebp)
+	movl	$481, 12(%esp)
+	movl	$640, 8(%esp)
+	movl	$481, 4(%esp)
+	movl	$0, (%esp)
+	call	__Z4lineiiii
+	leal	-180(%ebp), %eax
+	movl	$7, %ebx
+	movl	%eax, %esi

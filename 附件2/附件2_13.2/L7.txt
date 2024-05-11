@@ -1,0 +1,8 @@
+L7:
+	movl	-12(%ebp), %eax
+	addl	$64, %eax
+	movl	%eax, %edx
+	movl	-12(%ebp), %eax
+	addl	$_board, %eax
+	movb	%dl, (%eax)
+	addl	$1, -12(%ebp)

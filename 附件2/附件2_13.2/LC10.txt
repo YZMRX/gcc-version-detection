@@ -1,0 +1,8 @@
+LC10:
+	.ascii "\357\274\214\350\257\267\351\207\215\346\226\260\346\224\276\347\275\256\357\274\201\0"
+	.def	___gxx_personality_sj0;	.scl	2;	.type	32;	.endef
+	.def	__Unwind_SjLj_Register;	.scl	2;	.type	32;	.endef
+	.def	__Unwind_SjLj_Unregister;	.scl	2;	.type	32;	.endef
+	.text
+	.globl	__Z5placeb
+	.def	__Z5placeb;	.scl	2;	.type	32;	.endef

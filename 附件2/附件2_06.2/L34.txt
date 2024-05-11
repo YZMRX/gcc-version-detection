@@ -1,0 +1,4 @@
+L34:
+	cmpl	$15, -8(%ebp)
+	jg	L29
+	movl	$1, -12(%ebp)

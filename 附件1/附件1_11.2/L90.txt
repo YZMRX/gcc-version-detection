@@ -1,0 +1,20 @@
+L90:
+	call	_clock
+	movl	-216(%ebp), %edx
+	subl	%edx, %eax
+	cmpl	$50, %eax
+	setg	%al
+	testb	%al, %al
+	je	L93
+	leal	-240(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Boss3delEv
+	leal	-240(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Boss4moveEv
+	leal	-240(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Boss4showEv
+	call	_clock
+	movl	%eax, -216(%ebp)
+	jmp	L93

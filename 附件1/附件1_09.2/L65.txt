@@ -1,0 +1,14 @@
+L65:
+	testb	%al, %al
+	je	L63
+	leal	-204(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Tank3delEv
+	movl	-188(%ebp), %eax
+	addl	$3, %eax
+	movl	%eax, -188(%ebp)
+	leal	-204(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Tank4showEv
+	call	_clock
+	movl	%eax, -28(%ebp)

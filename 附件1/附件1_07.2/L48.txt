@@ -1,0 +1,9 @@
+L48:
+	movl	$107, (%esp)
+	movl	__imp__GetAsyncKeyState@4, %eax
+	call	*%eax
+	subl	$4, %esp
+	shrw	$15, %ax
+	testb	%al, %al
+	je	L51
+	movl	$0, -36(%ebp)

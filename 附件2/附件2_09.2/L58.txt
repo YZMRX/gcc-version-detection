@@ -1,0 +1,7 @@
+L58:
+	movl	$0, %eax
+	movl	-4(%ebp), %ecx
+	leave
+	leal	-4(%ecx), %esp
+	ret
+	.def	___tcf_0;	.scl	3;	.type	32;	.endef

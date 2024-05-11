@@ -1,0 +1,25 @@
+L84:
+	cmpl	$7, -52(%ebp)
+	jg	L79
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%ebp), %ebx
+	addl	%ebx, %eax
+	subl	$332, %eax
+	movzbl	(%eax), %eax
+	testb	%al, %al
+	je	L80
+	call	_clock
+	movl	%eax, %edx
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%ebp), %esi
+	addl	%esi, %eax
+	subl	$344, %eax
+	movl	(%eax), %eax
+	subl	%eax, %edx
+	movl	%edx, %eax
+	cmpl	$20, %eax
+	jle	L80
+	movl	$1, %eax
+	jmp	L81

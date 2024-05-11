@@ -1,0 +1,48 @@
+L84:
+	testb	%al, %al
+	je	L85
+	leal	-368(%ebp), %edx
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN8E_Bullet3delEv
+	leal	-368(%ebp), %edx
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN8E_Bullet4moveEv
+	leal	-368(%ebp), %edx
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN8E_Bullet4showEv
+	call	_clock
+	movl	-52(%ebp), %edx
+	sall	$4, %edx
+	leal	-24(%edx), %esi
+	leal	(%esi,%ebp), %edx
+	subl	$344, %edx
+	movl	%eax, (%edx)
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$340, %eax
+	movl	(%eax), %eax
+	cmpl	$4, %eax
+	jg	L86
+	leal	-368(%ebp), %edx
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN8E_Bullet3delEv
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$332, %eax
+	movb	$0, (%eax)

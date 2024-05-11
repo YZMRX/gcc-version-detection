@@ -1,0 +1,48 @@
+L71:
+	testb	%al, %al
+	je	L72
+	leal	-180(%ebp), %eax
+	movl	-44(%ebp), %edx
+	sall	$4, %edx
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN6Bullet3delEv
+	leal	-180(%ebp), %eax
+	movl	-44(%ebp), %edx
+	sall	$4, %edx
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN6Bullet4moveEv
+	leal	-180(%ebp), %eax
+	movl	-44(%ebp), %edx
+	sall	$4, %edx
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN6Bullet4showEv
+	call	_clock
+	movl	-44(%ebp), %edx
+	sall	$4, %edx
+	leal	-24(%ebp), %esi
+	addl	%esi, %edx
+	subl	$156, %edx
+	movl	%eax, (%edx)
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%ebp), %ebx
+	addl	%ebx, %eax
+	subl	$152, %eax
+	movl	(%eax), %eax
+	cmpl	$634, %eax
+	jle	L73
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%ebp), %esi
+	addl	%esi, %eax
+	subl	$144, %eax
+	movb	$0, (%eax)
+	leal	-180(%ebp), %eax
+	movl	-44(%ebp), %edx
+	sall	$4, %edx
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN6Bullet3delEv

@@ -1,0 +1,5 @@
+L91:
+	movl	$65280, -232(%ebp)
+	leal	-240(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Boss4showEv

@@ -1,0 +1,3 @@
+L3:
+	addl	$1, -4(%ebp)
+	jmp	L5

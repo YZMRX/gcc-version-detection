@@ -1,0 +1,13 @@
+L71:
+	cmpl	$7, -44(%ebp)
+	jle	L76
+	call	_clock
+	movl	%eax, %edx
+	movl	-212(%ebp), %eax
+	subl	%eax, %edx
+	cmpl	$700, %edx
+	setg	%al
+	testb	%al, %al
+	je	L77
+	movl	$0, -48(%ebp)
+	jmp	L78

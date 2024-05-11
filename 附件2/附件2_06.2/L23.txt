@@ -1,0 +1,5 @@
+L23:
+	leal	-48(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	jmp	L27

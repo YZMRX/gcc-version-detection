@@ -1,0 +1,26 @@
+L94:
+	movl	$5000, (%esp)
+	movl	__imp__Sleep@4, %eax
+	call	*%eax
+	subl	$4, %esp
+	call	__Z10closegraphv
+	movl	$0, %eax
+	leal	-12(%ebp), %esp
+	popl	%ecx
+	popl	%ebx
+	popl	%esi
+	popl	%ebp
+	leal	-4(%ecx), %esp
+	ret
+	.ident	"GCC: (GNU) 6.2.0"
+	.def	__Z12setfillcolorm;	.scl	2;	.type	32;	.endef
+	.def	__Z13fillrectangleiiii;	.scl	2;	.type	32;	.endef
+	.def	__Z12setlinecolorm;	.scl	2;	.type	32;	.endef
+	.def	__Z9rectangleiiii;	.scl	2;	.type	32;	.endef
+	.def	_clock;	.scl	2;	.type	32;	.endef
+	.def	__Z9initgraphiii;	.scl	2;	.type	32;	.endef
+	.def	__Z12settextcolorm;	.scl	2;	.type	32;	.endef
+	.def	__Z12settextstyleiiPKc;	.scl	2;	.type	32;	.endef
+	.def	__Z9outtextxyiiPKc;	.scl	2;	.type	32;	.endef
+	.def	__Z4lineiiii;	.scl	2;	.type	32;	.endef
+	.def	__Z10closegraphv;	.scl	2;	.type	32;	.endef

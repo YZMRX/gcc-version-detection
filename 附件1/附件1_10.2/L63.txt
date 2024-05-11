@@ -1,0 +1,17 @@
+L63:
+	movl	$115, (%esp)
+	movl	__imp__GetAsyncKeyState@4, %eax
+	call	*%eax
+	subl	$4, %esp
+	shrw	$15, %ax
+	testb	%al, %al
+	je	L66
+	movl	-188(%ebp), %eax
+	cmpl	$451, %eax
+	jg	L67
+	call	_clock
+	subl	-28(%ebp), %eax
+	cmpl	$39, %eax
+	jle	L67
+	movl	$1, %eax
+	jmp	L68

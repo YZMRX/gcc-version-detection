@@ -1,0 +1,5 @@
+LC2:
+	.ascii " \0"
+	.text
+	.globl	__Z7displayv
+	.def	__Z7displayv;	.scl	2;	.type	32;	.endef

@@ -1,0 +1,5 @@
+L86:
+	movl	$255, -192(%ebp)
+	leal	-204(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Tank4showEv

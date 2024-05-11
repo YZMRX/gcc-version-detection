@@ -1,0 +1,15 @@
+L61:
+	testb	%al, %al
+	je	L62
+	leal	-180(%ebp), %eax
+	movl	-40(%ebp), %edx
+	sall	$4, %edx
+	addl	%eax, %edx
+	leal	-204(%ebp), %eax
+	movl	%edx, (%esp)
+	movl	%eax, %ecx
+	call	__ZN4Tank4fireER6Bullet
+	subl	$4, %esp
+	call	_clock
+	movl	%eax, -32(%ebp)
+	jmp	L58

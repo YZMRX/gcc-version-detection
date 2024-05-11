@@ -1,0 +1,12 @@
+__ZN8E_BulletC1Ev:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$4, %esp
+	movl	%ecx, -4(%ebp)
+	movl	-4(%ebp), %eax
+	movb	$0, 12(%eax)
+	nop
+	leave
+	ret
+	.def	___main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"

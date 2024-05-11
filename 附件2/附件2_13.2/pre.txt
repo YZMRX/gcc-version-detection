@@ -1,0 +1,5 @@
+	.file	"2.cpp"
+	.text
+	.globl	_board
+	.bss
+	.align 32

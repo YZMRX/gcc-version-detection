@@ -1,0 +1,21 @@
+L33:
+	cmpl	$15, -12(%ebp)
+	jg	L30
+	movl	-8(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-12(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	$98, %al
+	je	L31
+	movl	-8(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-12(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	$119, %al
+	jne	L32

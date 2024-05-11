@@ -1,0 +1,4 @@
+LLSDACSE2069:
+	.text
+	.globl	__Z7computev
+	.def	__Z7computev;	.scl	2;	.type	32;	.endef

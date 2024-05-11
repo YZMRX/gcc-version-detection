@@ -1,0 +1,9 @@
+L26:
+	nop
+	leave
+	ret
+	.section	.text$_ZN4TankC1Eii,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN4TankC1Eii
+	.def	__ZN4TankC1Eii;	.scl	2;	.type	32;	.endef

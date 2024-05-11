@@ -1,0 +1,9 @@
+L16:
+	cmpb	$0, -60(%ebp)
+	je	L17
+	leal	-48(%ebp), %eax
+	movl	$LC5, (%esp)
+	movl	$1, -108(%ebp)
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEPKc
+	subl	$4, %esp

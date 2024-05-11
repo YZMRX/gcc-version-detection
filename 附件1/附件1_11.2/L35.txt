@@ -1,0 +1,9 @@
+L35:
+	nop
+	leave
+	ret
+	.section	.text$_ZN6BulletC1Ev,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN6BulletC1Ev
+	.def	__ZN6BulletC1Ev;	.scl	2;	.type	32;	.endef

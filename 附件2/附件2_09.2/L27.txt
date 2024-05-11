@@ -1,0 +1,11 @@
+L27:
+	leal	-112(%ebp), %eax
+	movl	%eax, (%esp)
+	call	__Unwind_SjLj_Unregister
+	leal	-12(%ebp), %esp
+	popl	%ebx
+	popl	%esi
+	popl	%edi
+	popl	%ebp
+	ret
+	.section	.gcc_except_table,"w"

@@ -1,0 +1,10 @@
+L25:
+	movl	-104(%ebp), %eax
+	movl	%eax, -116(%ebp)
+	leal	-48(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	movl	-116(%ebp), %eax
+	movl	%eax, (%esp)
+	movl	$-1, -108(%ebp)
+	call	__Unwind_SjLj_Resume

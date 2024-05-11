@@ -1,0 +1,15 @@
+__ZN6BulletC1Ev:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$4, %esp
+	movl	%ecx, -4(%ebp)
+	movl	-4(%ebp), %eax
+	movb	$0, 12(%eax)
+	nop
+	leave
+	ret
+	.section	.text$_ZN4BossC1Ev,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN4BossC1Ev
+	.def	__ZN4BossC1Ev;	.scl	2;	.type	32;	.endef

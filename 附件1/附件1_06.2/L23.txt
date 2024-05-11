@@ -1,0 +1,9 @@
+L23:
+	nop
+	leave
+	ret
+	.section	.text$_ZN4Boss4hurtEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN4Boss4hurtEv
+	.def	__ZN4Boss4hurtEv;	.scl	2;	.type	32;	.endef

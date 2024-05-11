@@ -1,0 +1,9 @@
+___tcf_0:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$8, %esp
+	movl	$__ZStL8__ioinit, %ecx
+	call	__ZNSt8ios_base4InitD1Ev
+	leave
+	ret
+	.def	__Z41__static_initialization_and_destruction_0ii;	.scl	3;	.type	32;	.endef

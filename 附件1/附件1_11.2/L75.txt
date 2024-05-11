@@ -1,0 +1,60 @@
+L75:
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$152, %eax
+	movl	(%eax), %eax
+	leal	5(%eax), %edx
+	movl	-228(%ebp), %eax
+	subl	$20, %eax
+	cmpl	%eax, %edx
+	jl	L74
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$152, %eax
+	movl	(%eax), %eax
+	leal	-5(%eax), %edx
+	movl	-228(%ebp), %eax
+	addl	$20, %eax
+	cmpl	%eax, %edx
+	jg	L74
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$148, %eax
+	movl	(%eax), %eax
+	leal	-4(%eax), %edx
+	movl	-224(%ebp), %eax
+	addl	$40, %eax
+	cmpl	%eax, %edx
+	jg	L74
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$148, %eax
+	movl	(%eax), %eax
+	leal	4(%eax), %edx
+	movl	-224(%ebp), %eax
+	subl	$40, %eax
+	cmpl	%eax, %edx
+	jl	L74
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$144, %eax
+	movb	$0, (%eax)
+	leal	-240(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Boss4hurtEv
+	leal	-180(%ebp), %edx
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	addl	%edx, %eax
+	movl	%eax, %ecx
+	call	__ZN6Bullet3delEv

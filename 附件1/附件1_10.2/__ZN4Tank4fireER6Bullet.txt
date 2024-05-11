@@ -1,0 +1,29 @@
+__ZN4Tank4fireER6Bullet:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$24, %esp
+	movl	%ecx, -12(%ebp)
+	movl	8(%ebp), %eax
+	movb	$1, 12(%eax)
+	movl	-12(%ebp), %eax
+	movl	8(%eax), %eax
+	leal	45(%eax), %edx
+	movl	8(%ebp), %eax
+	movl	%edx, 4(%eax)
+	movl	-12(%ebp), %eax
+	movl	16(%eax), %edx
+	movl	8(%ebp), %eax
+	movl	%edx, 8(%eax)
+	call	_clock
+	movl	8(%ebp), %edx
+	movl	%eax, (%edx)
+	movl	8(%ebp), %ecx
+	call	__ZN6Bullet4showEv
+	nop
+	leave
+	ret	$4
+	.section	.text$_ZN4Tank4hurtEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN4Tank4hurtEv
+	.def	__ZN4Tank4hurtEv;	.scl	2;	.type	32;	.endef

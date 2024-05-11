@@ -1,0 +1,7 @@
+L58:
+	movl	$0, %eax
+	movl	-4(%ebp), %ecx
+	leave
+	leal	-4(%ecx), %esp
+	ret
+	.section .rdata,"dr"

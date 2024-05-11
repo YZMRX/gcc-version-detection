@@ -1,0 +1,16 @@
+L64:
+	movl	-40(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$144, %eax
+	movzbl	(%eax), %eax
+	movzbl	%al, %eax
+	testl	%eax, %eax
+	jne	L60
+	call	_clock
+	subl	-32(%ebp), %eax
+	cmpl	$800, %eax
+	jle	L60
+	movl	$1, %eax
+	jmp	L61

@@ -1,0 +1,36 @@
+L42:
+	testl	%ebx, %ebx
+	jns	L43
+	call	_clock
+	movl	%eax, -216(%ebp)
+	call	_clock
+	movl	%eax, -212(%ebp)
+	leal	-204(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Tank4showEv
+	movl	$LC0, 8(%esp)
+	movl	$0, 4(%esp)
+	movl	$20, (%esp)
+	call	__Z12settextstyleiiPKc
+	movl	$LC2, 8(%esp)
+	movl	$485, 4(%esp)
+	movl	$10, (%esp)
+	call	__Z9outtextxyiiPKc
+	movl	$65766, (%esp)
+	call	__Z12setfillcolorm
+	movl	$510, 12(%esp)
+	movl	$560, 8(%esp)
+	movl	$485, 4(%esp)
+	movl	$160, (%esp)
+	call	__Z13fillrectangleiiii
+	movl	$LC3, 8(%esp)
+	movl	$520, 4(%esp)
+	movl	$10, (%esp)
+	call	__Z9outtextxyiiPKc
+	movl	$130816, (%esp)
+	call	__Z12setfillcolorm
+	movl	$540, 12(%esp)
+	movl	$560, 8(%esp)
+	movl	$515, 4(%esp)
+	movl	$160, (%esp)
+	call	__Z13fillrectangleiiii

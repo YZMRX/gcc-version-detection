@@ -1,0 +1,21 @@
+__ZN4BossC1Ev:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$4, %esp
+	movl	%ecx, -4(%ebp)
+	movl	-4(%ebp), %eax
+	movb	$0, (%eax)
+	movl	-4(%ebp), %eax
+	movl	$8225280, 8(%eax)
+	movl	-4(%ebp), %eax
+	movl	$100, 20(%eax)
+	movl	-4(%ebp), %eax
+	movb	$0, 32(%eax)
+	nop
+	leave
+	ret
+	.section	.text$_ZN8E_BulletC1Ev,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN8E_BulletC1Ev
+	.def	__ZN8E_BulletC1Ev;	.scl	2;	.type	32;	.endef

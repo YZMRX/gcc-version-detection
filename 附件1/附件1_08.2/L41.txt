@@ -1,0 +1,8 @@
+L41:
+	testl	%ebx, %ebx
+	js	L40
+	movl	%esi, %ecx
+	call	__ZN6BulletC1Ev
+	addl	$16, %esi
+	subl	$1, %ebx
+	jmp	L41

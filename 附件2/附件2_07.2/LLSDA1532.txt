@@ -1,0 +1,5 @@
+LLSDA1532:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 LLSDACSE1532-LLSDACSB1532

@@ -1,0 +1,3 @@
+L76:
+	call	_clock
+	movl	%eax, -212(%ebp)

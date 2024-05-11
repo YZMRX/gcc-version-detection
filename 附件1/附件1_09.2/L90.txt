@@ -1,0 +1,23 @@
+L90:
+	movzbl	_wined, %eax
+	testb	%al, %al
+	jne	L44
+	movzbl	_dead, %eax
+	testb	%al, %al
+	jne	L44
+	movl	$87, (%esp)
+	movl	__imp__GetAsyncKeyState@4, %eax
+	call	*%eax
+	subl	$4, %esp
+	shrw	$15, %ax
+	testb	%al, %al
+	je	L45
+	movl	-188(%ebp), %eax
+	cmpl	$28, %eax
+	jle	L46
+	call	_clock
+	subl	-28(%ebp), %eax
+	cmpl	$39, %eax
+	jle	L46
+	movl	$1, %eax
+	jmp	L47

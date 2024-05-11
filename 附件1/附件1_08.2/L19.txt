@@ -1,0 +1,11 @@
+L19:
+	movl	-4(%ebp), %eax
+	movzbl	32(%eax), %eax
+	xorl	$1, %eax
+	testb	%al, %al
+	je	L20
+	movl	-4(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	5(%eax), %edx
+	movl	-4(%ebp), %eax
+	movl	%edx, 16(%eax)

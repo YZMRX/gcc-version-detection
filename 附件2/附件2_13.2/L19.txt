@@ -1,0 +1,25 @@
+L19:
+	movzbl	-49(%ebp), %eax
+	movsbl	%al, %eax
+	leal	-64(%eax), %edx
+	movzbl	-50(%ebp), %eax
+	movsbl	%al, %eax
+	subl	$64, %eax
+	sall	$4, %edx
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	$98, %al
+	je	L20
+	movzbl	-49(%ebp), %eax
+	movsbl	%al, %eax
+	leal	-64(%eax), %edx
+	movzbl	-50(%ebp), %eax
+	movsbl	%al, %eax
+	subl	$64, %eax
+	sall	$4, %edx
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	$119, %al
+	jne	L21

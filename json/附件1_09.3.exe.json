@@ -1,0 +1,1382 @@
+{
+    "dos_header": {
+        "Structure": "IMAGE_DOS_HEADER",
+        "e_magic": {
+            "FileOffset": 0,
+            "Offset": 0,
+            "Value": 23117
+        },
+        "e_cblp": {
+            "FileOffset": 2,
+            "Offset": 2,
+            "Value": 144
+        },
+        "e_cp": {
+            "FileOffset": 4,
+            "Offset": 4,
+            "Value": 3
+        },
+        "e_crlc": {
+            "FileOffset": 6,
+            "Offset": 6,
+            "Value": 0
+        },
+        "e_cparhdr": {
+            "FileOffset": 8,
+            "Offset": 8,
+            "Value": 4
+        },
+        "e_minalloc": {
+            "FileOffset": 10,
+            "Offset": 10,
+            "Value": 0
+        },
+        "e_maxalloc": {
+            "FileOffset": 12,
+            "Offset": 12,
+            "Value": 65535
+        },
+        "e_ss": {
+            "FileOffset": 14,
+            "Offset": 14,
+            "Value": 0
+        },
+        "e_sp": {
+            "FileOffset": 16,
+            "Offset": 16,
+            "Value": 184
+        },
+        "e_csum": {
+            "FileOffset": 18,
+            "Offset": 18,
+            "Value": 0
+        },
+        "e_ip": {
+            "FileOffset": 20,
+            "Offset": 20,
+            "Value": 0
+        },
+        "e_cs": {
+            "FileOffset": 22,
+            "Offset": 22,
+            "Value": 0
+        },
+        "e_lfarlc": {
+            "FileOffset": 24,
+            "Offset": 24,
+            "Value": 64
+        },
+        "e_ovno": {
+            "FileOffset": 26,
+            "Offset": 26,
+            "Value": 0
+        },
+        "e_res": {
+            "FileOffset": 28,
+            "Offset": 28,
+            "Value": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+        },
+        "e_oemid": {
+            "FileOffset": 36,
+            "Offset": 36,
+            "Value": 0
+        },
+        "e_oeminfo": {
+            "FileOffset": 38,
+            "Offset": 38,
+            "Value": 0
+        },
+        "e_res2": {
+            "FileOffset": 40,
+            "Offset": 40,
+            "Value": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+        },
+        "e_lfanew": {
+            "FileOffset": 60,
+            "Offset": 60,
+            "Value": 128
+        }
+    },
+    "file_header": {
+        "Structure": "IMAGE_FILE_HEADER",
+        "Machine": {
+            "FileOffset": 132,
+            "Offset": 0,
+            "Value": 332
+        },
+        "NumberOfSections": {
+            "FileOffset": 134,
+            "Offset": 2,
+            "Value": 15
+        },
+        "TimeDateStamp": {
+            "FileOffset": 136,
+            "Offset": 4,
+            "Value": "0x663CB4F7 [Thu May  9 11:35:19 2024 UTC]"
+        },
+        "PointerToSymbolTable": {
+            "FileOffset": 140,
+            "Offset": 8,
+            "Value": 173056
+        },
+        "NumberOfSymbols": {
+            "FileOffset": 144,
+            "Offset": 12,
+            "Value": 3989
+        },
+        "SizeOfOptionalHeader": {
+            "FileOffset": 148,
+            "Offset": 16,
+            "Value": 224
+        },
+        "Characteristics": {
+            "FileOffset": 150,
+            "Offset": 18,
+            "Value": 263
+        }
+    },
+    "optional_header": {
+        "Structure": "IMAGE_OPTIONAL_HEADER",
+        "Magic": {
+            "FileOffset": 152,
+            "Offset": 0,
+            "Value": 267
+        },
+        "MajorLinkerVersion": {
+            "FileOffset": 154,
+            "Offset": 2,
+            "Value": 2
+        },
+        "MinorLinkerVersion": {
+            "FileOffset": 155,
+            "Offset": 3,
+            "Value": 34
+        },
+        "SizeOfCode": {
+            "FileOffset": 156,
+            "Offset": 4,
+            "Value": 115200
+        },
+        "SizeOfInitializedData": {
+            "FileOffset": 160,
+            "Offset": 8,
+            "Value": 135168
+        },
+        "SizeOfUninitializedData": {
+            "FileOffset": 164,
+            "Offset": 12,
+            "Value": 1536
+        },
+        "AddressOfEntryPoint": {
+            "FileOffset": 168,
+            "Offset": 16,
+            "Value": 5312
+        },
+        "BaseOfCode": {
+            "FileOffset": 172,
+            "Offset": 20,
+            "Value": 4096
+        },
+        "BaseOfData": {
+            "FileOffset": 176,
+            "Offset": 24,
+            "Value": 122880
+        },
+        "ImageBase": {
+            "FileOffset": 180,
+            "Offset": 28,
+            "Value": 4194304
+        },
+        "SectionAlignment": {
+            "FileOffset": 184,
+            "Offset": 32,
+            "Value": 4096
+        },
+        "FileAlignment": {
+            "FileOffset": 188,
+            "Offset": 36,
+            "Value": 512
+        },
+        "MajorOperatingSystemVersion": {
+            "FileOffset": 192,
+            "Offset": 40,
+            "Value": 4
+        },
+        "MinorOperatingSystemVersion": {
+            "FileOffset": 194,
+            "Offset": 42,
+            "Value": 0
+        },
+        "MajorImageVersion": {
+            "FileOffset": 196,
+            "Offset": 44,
+            "Value": 1
+        },
+        "MinorImageVersion": {
+            "FileOffset": 198,
+            "Offset": 46,
+            "Value": 0
+        },
+        "MajorSubsystemVersion": {
+            "FileOffset": 200,
+            "Offset": 48,
+            "Value": 4
+        },
+        "MinorSubsystemVersion": {
+            "FileOffset": 202,
+            "Offset": 50,
+            "Value": 0
+        },
+        "Reserved1": {
+            "FileOffset": 204,
+            "Offset": 52,
+            "Value": 0
+        },
+        "SizeOfImage": {
+            "FileOffset": 208,
+            "Offset": 56,
+            "Value": 221184
+        },
+        "SizeOfHeaders": {
+            "FileOffset": 212,
+            "Offset": 60,
+            "Value": 1024
+        },
+        "CheckSum": {
+            "FileOffset": 216,
+            "Offset": 64,
+            "Value": 321612
+        },
+        "Subsystem": {
+            "FileOffset": 220,
+            "Offset": 68,
+            "Value": 3
+        },
+        "DllCharacteristics": {
+            "FileOffset": 222,
+            "Offset": 70,
+            "Value": 0
+        },
+        "SizeOfStackReserve": {
+            "FileOffset": 224,
+            "Offset": 72,
+            "Value": 2097152
+        },
+        "SizeOfStackCommit": {
+            "FileOffset": 228,
+            "Offset": 76,
+            "Value": 4096
+        },
+        "SizeOfHeapReserve": {
+            "FileOffset": 232,
+            "Offset": 80,
+            "Value": 1048576
+        },
+        "SizeOfHeapCommit": {
+            "FileOffset": 236,
+            "Offset": 84,
+            "Value": 4096
+        },
+        "LoaderFlags": {
+            "FileOffset": 240,
+            "Offset": 88,
+            "Value": 0
+        },
+        "NumberOfRvaAndSizes": {
+            "FileOffset": 244,
+            "Offset": 92,
+            "Value": 16
+        }
+    },
+    "section_headers": [
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 376,
+                "Offset": 0,
+                "Value": ".text\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 384,
+                "Offset": 8,
+                "Value": 114916
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 384,
+                "Offset": 8,
+                "Value": 114916
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 384,
+                "Offset": 8,
+                "Value": 114916
+            },
+            "VirtualAddress": {
+                "FileOffset": 388,
+                "Offset": 12,
+                "Value": 4096
+            },
+            "SizeOfRawData": {
+                "FileOffset": 392,
+                "Offset": 16,
+                "Value": 115200
+            },
+            "PointerToRawData": {
+                "FileOffset": 396,
+                "Offset": 20,
+                "Value": 1024
+            },
+            "PointerToRelocations": {
+                "FileOffset": 400,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 404,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 408,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 410,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 412,
+                "Offset": 36,
+                "Value": 1615855712
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 416,
+                "Offset": 0,
+                "Value": ".data\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 424,
+                "Offset": 8,
+                "Value": 228
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 424,
+                "Offset": 8,
+                "Value": 228
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 424,
+                "Offset": 8,
+                "Value": 228
+            },
+            "VirtualAddress": {
+                "FileOffset": 428,
+                "Offset": 12,
+                "Value": 122880
+            },
+            "SizeOfRawData": {
+                "FileOffset": 432,
+                "Offset": 16,
+                "Value": 512
+            },
+            "PointerToRawData": {
+                "FileOffset": 436,
+                "Offset": 20,
+                "Value": 116224
+            },
+            "PointerToRelocations": {
+                "FileOffset": 440,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 444,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 448,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 450,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 452,
+                "Offset": 36,
+                "Value": 3227516992
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 456,
+                "Offset": 0,
+                "Value": ".rdata\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 464,
+                "Offset": 8,
+                "Value": 14196
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 464,
+                "Offset": 8,
+                "Value": 14196
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 464,
+                "Offset": 8,
+                "Value": 14196
+            },
+            "VirtualAddress": {
+                "FileOffset": 468,
+                "Offset": 12,
+                "Value": 126976
+            },
+            "SizeOfRawData": {
+                "FileOffset": 472,
+                "Offset": 16,
+                "Value": 14336
+            },
+            "PointerToRawData": {
+                "FileOffset": 476,
+                "Offset": 20,
+                "Value": 116736
+            },
+            "PointerToRelocations": {
+                "FileOffset": 480,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 484,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 488,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 490,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 492,
+                "Offset": 36,
+                "Value": 1081081920
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 496,
+                "Offset": 0,
+                "Value": ".bss\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 504,
+                "Offset": 8,
+                "Value": 1360
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 504,
+                "Offset": 8,
+                "Value": 1360
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 504,
+                "Offset": 8,
+                "Value": 1360
+            },
+            "VirtualAddress": {
+                "FileOffset": 508,
+                "Offset": 12,
+                "Value": 143360
+            },
+            "SizeOfRawData": {
+                "FileOffset": 512,
+                "Offset": 16,
+                "Value": 0
+            },
+            "PointerToRawData": {
+                "FileOffset": 516,
+                "Offset": 20,
+                "Value": 0
+            },
+            "PointerToRelocations": {
+                "FileOffset": 520,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 524,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 528,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 530,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 532,
+                "Offset": 36,
+                "Value": 3227517056
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 536,
+                "Offset": 0,
+                "Value": ".idata\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 544,
+                "Offset": 8,
+                "Value": 3856
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 544,
+                "Offset": 8,
+                "Value": 3856
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 544,
+                "Offset": 8,
+                "Value": 3856
+            },
+            "VirtualAddress": {
+                "FileOffset": 548,
+                "Offset": 12,
+                "Value": 147456
+            },
+            "SizeOfRawData": {
+                "FileOffset": 552,
+                "Offset": 16,
+                "Value": 4096
+            },
+            "PointerToRawData": {
+                "FileOffset": 556,
+                "Offset": 20,
+                "Value": 131072
+            },
+            "PointerToRelocations": {
+                "FileOffset": 560,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 564,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 568,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 570,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 572,
+                "Offset": 36,
+                "Value": 3224371264
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 576,
+                "Offset": 0,
+                "Value": ".CRT\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 584,
+                "Offset": 8,
+                "Value": 52
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 584,
+                "Offset": 8,
+                "Value": 52
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 584,
+                "Offset": 8,
+                "Value": 52
+            },
+            "VirtualAddress": {
+                "FileOffset": 588,
+                "Offset": 12,
+                "Value": 151552
+            },
+            "SizeOfRawData": {
+                "FileOffset": 592,
+                "Offset": 16,
+                "Value": 512
+            },
+            "PointerToRawData": {
+                "FileOffset": 596,
+                "Offset": 20,
+                "Value": 135168
+            },
+            "PointerToRelocations": {
+                "FileOffset": 600,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 604,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 608,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 610,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 612,
+                "Offset": 36,
+                "Value": 3224371264
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 616,
+                "Offset": 0,
+                "Value": ".tls\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 624,
+                "Offset": 8,
+                "Value": 8
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 624,
+                "Offset": 8,
+                "Value": 8
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 624,
+                "Offset": 8,
+                "Value": 8
+            },
+            "VirtualAddress": {
+                "FileOffset": 628,
+                "Offset": 12,
+                "Value": 155648
+            },
+            "SizeOfRawData": {
+                "FileOffset": 632,
+                "Offset": 16,
+                "Value": 512
+            },
+            "PointerToRawData": {
+                "FileOffset": 636,
+                "Offset": 20,
+                "Value": 135680
+            },
+            "PointerToRelocations": {
+                "FileOffset": 640,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 644,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 648,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 650,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 652,
+                "Offset": 36,
+                "Value": 3224371264
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 656,
+                "Offset": 0,
+                "Value": "/4\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 664,
+                "Offset": 8,
+                "Value": 32
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 664,
+                "Offset": 8,
+                "Value": 32
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 664,
+                "Offset": 8,
+                "Value": 32
+            },
+            "VirtualAddress": {
+                "FileOffset": 668,
+                "Offset": 12,
+                "Value": 159744
+            },
+            "SizeOfRawData": {
+                "FileOffset": 672,
+                "Offset": 16,
+                "Value": 512
+            },
+            "PointerToRawData": {
+                "FileOffset": 676,
+                "Offset": 20,
+                "Value": 136192
+            },
+            "PointerToRelocations": {
+                "FileOffset": 680,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 684,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 688,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 690,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 692,
+                "Offset": 36,
+                "Value": 1108344896
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 696,
+                "Offset": 0,
+                "Value": "/19\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 704,
+                "Offset": 8,
+                "Value": 29456
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 704,
+                "Offset": 8,
+                "Value": 29456
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 704,
+                "Offset": 8,
+                "Value": 29456
+            },
+            "VirtualAddress": {
+                "FileOffset": 708,
+                "Offset": 12,
+                "Value": 163840
+            },
+            "SizeOfRawData": {
+                "FileOffset": 712,
+                "Offset": 16,
+                "Value": 29696
+            },
+            "PointerToRawData": {
+                "FileOffset": 716,
+                "Offset": 20,
+                "Value": 136704
+            },
+            "PointerToRelocations": {
+                "FileOffset": 720,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 724,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 728,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 730,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 732,
+                "Offset": 36,
+                "Value": 1108344896
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 736,
+                "Offset": 0,
+                "Value": "/31\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 744,
+                "Offset": 8,
+                "Value": 1218
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 744,
+                "Offset": 8,
+                "Value": 1218
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 744,
+                "Offset": 8,
+                "Value": 1218
+            },
+            "VirtualAddress": {
+                "FileOffset": 748,
+                "Offset": 12,
+                "Value": 196608
+            },
+            "SizeOfRawData": {
+                "FileOffset": 752,
+                "Offset": 16,
+                "Value": 1536
+            },
+            "PointerToRawData": {
+                "FileOffset": 756,
+                "Offset": 20,
+                "Value": 166400
+            },
+            "PointerToRelocations": {
+                "FileOffset": 760,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 764,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 768,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 770,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 772,
+                "Offset": 36,
+                "Value": 1108344896
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 776,
+                "Offset": 0,
+                "Value": "/45\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 784,
+                "Offset": 8,
+                "Value": 1926
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 784,
+                "Offset": 8,
+                "Value": 1926
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 784,
+                "Offset": 8,
+                "Value": 1926
+            },
+            "VirtualAddress": {
+                "FileOffset": 788,
+                "Offset": 12,
+                "Value": 200704
+            },
+            "SizeOfRawData": {
+                "FileOffset": 792,
+                "Offset": 16,
+                "Value": 2048
+            },
+            "PointerToRawData": {
+                "FileOffset": 796,
+                "Offset": 20,
+                "Value": 167936
+            },
+            "PointerToRelocations": {
+                "FileOffset": 800,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 804,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 808,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 810,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 812,
+                "Offset": 36,
+                "Value": 1108344896
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 816,
+                "Offset": 0,
+                "Value": "/57\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 824,
+                "Offset": 8,
+                "Value": 260
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 824,
+                "Offset": 8,
+                "Value": 260
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 824,
+                "Offset": 8,
+                "Value": 260
+            },
+            "VirtualAddress": {
+                "FileOffset": 828,
+                "Offset": 12,
+                "Value": 204800
+            },
+            "SizeOfRawData": {
+                "FileOffset": 832,
+                "Offset": 16,
+                "Value": 512
+            },
+            "PointerToRawData": {
+                "FileOffset": 836,
+                "Offset": 20,
+                "Value": 169984
+            },
+            "PointerToRelocations": {
+                "FileOffset": 840,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 844,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 848,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 850,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 852,
+                "Offset": 36,
+                "Value": 1110442048
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 856,
+                "Offset": 0,
+                "Value": "/70\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 864,
+                "Offset": 8,
+                "Value": 746
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 864,
+                "Offset": 8,
+                "Value": 746
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 864,
+                "Offset": 8,
+                "Value": 746
+            },
+            "VirtualAddress": {
+                "FileOffset": 868,
+                "Offset": 12,
+                "Value": 208896
+            },
+            "SizeOfRawData": {
+                "FileOffset": 872,
+                "Offset": 16,
+                "Value": 1024
+            },
+            "PointerToRawData": {
+                "FileOffset": 876,
+                "Offset": 20,
+                "Value": 170496
+            },
+            "PointerToRelocations": {
+                "FileOffset": 880,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 884,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 888,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 890,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 892,
+                "Offset": 36,
+                "Value": 1108344896
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 896,
+                "Offset": 0,
+                "Value": "/81\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 904,
+                "Offset": 8,
+                "Value": 786
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 904,
+                "Offset": 8,
+                "Value": 786
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 904,
+                "Offset": 8,
+                "Value": 786
+            },
+            "VirtualAddress": {
+                "FileOffset": 908,
+                "Offset": 12,
+                "Value": 212992
+            },
+            "SizeOfRawData": {
+                "FileOffset": 912,
+                "Offset": 16,
+                "Value": 1024
+            },
+            "PointerToRawData": {
+                "FileOffset": 916,
+                "Offset": 20,
+                "Value": 171520
+            },
+            "PointerToRelocations": {
+                "FileOffset": 920,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 924,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 928,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 930,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 932,
+                "Offset": 36,
+                "Value": 1108344896
+            }
+        },
+        {
+            "Structure": "IMAGE_SECTION_HEADER",
+            "Name": {
+                "FileOffset": 936,
+                "Offset": 0,
+                "Value": "/92\\x00\\x00\\x00\\x00\\x00"
+            },
+            "Misc": {
+                "FileOffset": 944,
+                "Offset": 8,
+                "Value": 136
+            },
+            "Misc_PhysicalAddress": {
+                "FileOffset": 944,
+                "Offset": 8,
+                "Value": 136
+            },
+            "Misc_VirtualSize": {
+                "FileOffset": 944,
+                "Offset": 8,
+                "Value": 136
+            },
+            "VirtualAddress": {
+                "FileOffset": 948,
+                "Offset": 12,
+                "Value": 217088
+            },
+            "SizeOfRawData": {
+                "FileOffset": 952,
+                "Offset": 16,
+                "Value": 512
+            },
+            "PointerToRawData": {
+                "FileOffset": 956,
+                "Offset": 20,
+                "Value": 172544
+            },
+            "PointerToRelocations": {
+                "FileOffset": 960,
+                "Offset": 24,
+                "Value": 0
+            },
+            "PointerToLinenumbers": {
+                "FileOffset": 964,
+                "Offset": 28,
+                "Value": 0
+            },
+            "NumberOfRelocations": {
+                "FileOffset": 968,
+                "Offset": 32,
+                "Value": 0
+            },
+            "NumberOfLinenumbers": {
+                "FileOffset": 970,
+                "Offset": 34,
+                "Value": 0
+            },
+            "Characteristics": {
+                "FileOffset": 972,
+                "Offset": 36,
+                "Value": 1108344896
+            }
+        }
+    ],
+    "imported_functions": {
+        "KERNEL32.dll": [
+            "AllocConsole",
+            "CloseHandle",
+            "CreateEventA",
+            "CreateFileA",
+            "CreateSemaphoreW",
+            "CreateThread",
+            "DeleteCriticalSection",
+            "EnterCriticalSection",
+            "FindResourceA",
+            "FreeConsole",
+            "GetConsoleWindow",
+            "GetCurrentProcess",
+            "GetCurrentProcessId",
+            "GetCurrentThreadId",
+            "GetFileSize",
+            "GetLastError",
+            "GetModuleFileNameA",
+            "GetModuleHandleA",
+            "GetProcAddress",
+            "GetStartupInfoA",
+            "GetSystemTimeAsFileTime",
+            "GetTickCount",
+            "GlobalAlloc",
+            "GlobalFree",
+            "GlobalLock",
+            "GlobalReAlloc",
+            "GlobalUnlock",
+            "InitializeCriticalSection",
+            "LeaveCriticalSection",
+            "LoadLibraryA",
+            "LoadResource",
+            "LockResource",
+            "MultiByteToWideChar",
+            "QueryPerformanceCounter",
+            "ReadFile",
+            "ReleaseSemaphore",
+            "ResetEvent",
+            "SetConsoleCtrlHandler",
+            "SetEvent",
+            "SetLastError",
+            "SetUnhandledExceptionFilter",
+            "SizeofResource",
+            "Sleep",
+            "TerminateProcess",
+            "TlsAlloc",
+            "TlsFree",
+            "TlsGetValue",
+            "TlsSetValue",
+            "UnhandledExceptionFilter",
+            "VirtualProtect",
+            "VirtualQuery",
+            "WaitForSingleObject",
+            "lstrcatW",
+            "lstrcpynA",
+            "lstrcpynW",
+            "lstrlenW"
+        ],
+        "msvcrt.dll": [
+            "__getmainargs",
+            "__initenv",
+            "__lconv_init",
+            "__p__acmdln",
+            "__p__fmode",
+            "__set_app_type",
+            "__setusermatherr",
+            "_amsg_exit",
+            "_cexit",
+            "_errno",
+            "_initterm",
+            "_iob",
+            "_onexit",
+            "_wcsupr",
+            "abort",
+            "calloc",
+            "clock",
+            "exit",
+            "fclose",
+            "fprintf",
+            "fputc",
+            "fputs",
+            "free",
+            "freopen",
+            "fwrite",
+            "malloc",
+            "memcpy",
+            "memset",
+            "realloc",
+            "signal",
+            "sprintf",
+            "strcmp",
+            "strlen",
+            "strncmp",
+            "strrchr",
+            "vfprintf",
+            "wcsrchr",
+            "wcsstr",
+            "_write"
+        ],
+        "SHELL32.dll": [
+            "ExtractIconA"
+        ],
+        "USER32.dll": [
+            "AdjustWindowRectEx",
+            "CreateWindowExA",
+            "DefWindowProcA",
+            "DestroyIcon",
+            "DestroyWindow",
+            "DispatchMessageA",
+            "DrawTextA",
+            "EnableWindow",
+            "GetAsyncKeyState",
+            "GetClassInfoExA",
+            "GetClientRect",
+            "GetDC",
+            "GetFocus",
+            "GetKeyState",
+            "GetMessageA",
+            "GetWindowRect",
+            "GetWindowTextA",
+            "GetWindowTextLengthA",
+            "IsWindowVisible",
+            "LoadCursorA",
+            "PeekMessageA",
+            "PostMessageA",
+            "PostQuitMessage",
+            "RegisterClassExA",
+            "ReleaseCapture",
+            "ReleaseDC",
+            "ScreenToClient",
+            "SendMessageA",
+            "SetCapture",
+            "SetFocus",
+            "SetForegroundWindow",
+            "SetWindowPos",
+            "ShowWindow",
+            "SystemParametersInfoA",
+            "TranslateMessage",
+            "UnregisterClassA",
+            "UpdateWindow",
+            "ValidateRect"
+        ]
+    }
+}

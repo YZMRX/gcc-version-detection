@@ -1,0 +1,15 @@
+L44:
+	movzbl	_wined, %eax
+	testb	%al, %al
+	je	L94
+	movl	$65024, (%esp)
+	call	__Z12settextcolorm
+	movl	$LC0, 8(%esp)
+	movl	$0, 4(%esp)
+	movl	$35, (%esp)
+	call	__Z12settextstyleiiPKc
+	movl	$LC4, 8(%esp)
+	movl	$200, 4(%esp)
+	movl	$150, (%esp)
+	call	__Z9outtextxyiiPKc
+	jmp	L95

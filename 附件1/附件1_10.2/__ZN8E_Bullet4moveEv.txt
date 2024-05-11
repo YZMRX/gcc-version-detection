@@ -1,0 +1,25 @@
+__ZN8E_Bullet4moveEv:
+	pushl	%ebp
+	movl	%esp, %ebp
+	pushl	%ebx
+	subl	$4, %esp
+	movl	%ecx, -8(%ebp)
+	movl	-8(%ebp), %ecx
+	movl	4(%ecx), %ecx
+	leal	-3(%ecx), %ebx
+	movl	-8(%ebp), %ecx
+	movl	%ebx, 4(%ecx)
+	movl	-8(%ebp), %ecx
+	movl	4(%ecx), %ecx
+	movl	%ecx, %eax
+	movl	-8(%ebp), %ecx
+	movl	8(%ecx), %ecx
+	movl	%ecx, %edx
+	movl	-4(%ebp), %ebx
+	leave
+	ret
+	.section	.text$_ZN6Bullet4showEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN6Bullet4showEv
+	.def	__ZN6Bullet4showEv;	.scl	2;	.type	32;	.endef

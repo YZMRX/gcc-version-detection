@@ -1,0 +1,5 @@
+L43:
+	movl	%esi, %ecx
+	call	__ZN8E_BulletC1Ev
+	addl	$16, %esi
+	subl	$1, %ebx

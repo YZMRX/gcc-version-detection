@@ -1,0 +1,60 @@
+__ZN4Boss4hurtEv:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$40, %esp
+	movl	%ecx, -12(%ebp)
+	movl	-12(%ebp), %eax
+	movl	20(%eax), %eax
+	leal	-4(%eax), %edx
+	movl	-12(%ebp), %eax
+	movl	%edx, 20(%eax)
+	call	_clock
+	movl	-12(%ebp), %edx
+	movl	%eax, 4(%edx)
+	movl	$0, (%esp)
+	call	__Z12setfillcolorm
+	movl	$16777215, (%esp)
+	call	__Z12setlinecolorm
+	movl	$510, 12(%esp)
+	movl	$560, 8(%esp)
+	movl	$485, 4(%esp)
+	movl	$160, (%esp)
+	call	__Z13fillrectangleiiii
+	movl	-12(%ebp), %eax
+	movl	20(%eax), %eax
+	addl	$40, %eax
+	sall	$2, %eax
+	movl	$510, 12(%esp)
+	movl	%eax, 8(%esp)
+	movl	$485, 4(%esp)
+	movl	$160, (%esp)
+	call	__Z9rectangleiiii
+	movl	$65766, (%esp)
+	call	__Z12setfillcolorm
+	movl	$16777215, (%esp)
+	call	__Z12setlinecolorm
+	movl	-12(%ebp), %eax
+	movl	20(%eax), %eax
+	addl	$40, %eax
+	sall	$2, %eax
+	movl	$510, 12(%esp)
+	movl	%eax, 8(%esp)
+	movl	$485, 4(%esp)
+	movl	$160, (%esp)
+	call	__Z13fillrectangleiiii
+	movl	-12(%ebp), %eax
+	movl	20(%eax), %eax
+	addl	$40, %eax
+	sall	$2, %eax
+	movl	$510, 12(%esp)
+	movl	%eax, 8(%esp)
+	movl	$485, 4(%esp)
+	movl	$160, (%esp)
+	call	__Z9rectangleiiii
+	movl	-12(%ebp), %eax
+	movb	$1, (%eax)
+	movl	-12(%ebp), %eax
+	movl	20(%eax), %eax
+	testl	%eax, %eax
+	jg	L26
+	movb	$1, _wined

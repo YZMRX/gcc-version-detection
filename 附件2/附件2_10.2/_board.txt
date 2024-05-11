@@ -1,0 +1,3 @@
+_board:
+	.space 256
+	.globl	_o

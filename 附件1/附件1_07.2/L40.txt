@@ -1,0 +1,15 @@
+L40:
+	leal	-204(%ebp), %eax
+	movl	$30, 4(%esp)
+	movl	$30, (%esp)
+	movl	%eax, %ecx
+	call	__ZN4TankC1Eii
+	subl	$8, %esp
+	leal	-240(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4BossC1Ev
+	movl	$580, -228(%ebp)
+	movl	$240, -224(%ebp)
+	leal	-368(%ebp), %eax
+	movl	$7, %ebx
+	movl	%eax, %esi

@@ -1,0 +1,19 @@
+L79:
+	movzbl	-204(%ebp), %eax
+	testb	%al, %al
+	je	L85
+	call	_clock
+	movl	%eax, %edx
+	movl	-184(%ebp), %eax
+	subl	%eax, %edx
+	movl	%edx, %eax
+	cmpl	$100, %eax
+	setg	%al
+	testb	%al, %al
+	je	L86
+	movl	$13808790, -192(%ebp)
+	leal	-204(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Tank4showEv
+	movb	$0, -204(%ebp)
+	jmp	L85

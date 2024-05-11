@@ -1,0 +1,23 @@
+L87:
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$332, %eax
+	movzbl	(%eax), %eax
+	movzbl	%al, %eax
+	cmpl	$1, %eax
+	jne	L83
+	call	_clock
+	movl	%eax, %edx
+	movl	-52(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%eax), %eax
+	addl	%ebp, %eax
+	subl	$344, %eax
+	movl	(%eax), %eax
+	subl	%eax, %edx
+	cmpl	$20, %edx
+	jle	L83
+	movl	$1, %eax
+	jmp	L84

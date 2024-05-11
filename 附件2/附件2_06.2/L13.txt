@@ -1,0 +1,19 @@
+L13:
+	cmpl	$15, -16(%ebp)
+	jg	L12
+	movl	-12(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-16(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	movsbl	%al, %eax
+	movl	%eax, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
+	movl	$LC2, 4(%esp)
+	movl	%eax, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	addl	$1, -16(%ebp)
+	jmp	L13

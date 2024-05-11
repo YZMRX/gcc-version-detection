@@ -1,0 +1,18 @@
+L62:
+	cmpl	$7, -40(%ebp)
+	jg	L57
+	movl	-40(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%ebp), %ebx
+	addl	%ebx, %eax
+	subl	$144, %eax
+	movzbl	(%eax), %eax
+	movzbl	%al, %eax
+	testl	%eax, %eax
+	jne	L59
+	call	_clock
+	subl	-32(%ebp), %eax
+	cmpl	$800, %eax
+	jle	L59
+	movl	$1, %eax
+	jmp	L60

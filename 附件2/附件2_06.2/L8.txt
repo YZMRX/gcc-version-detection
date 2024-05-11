@@ -1,0 +1,7 @@
+L8:
+	movb	$42, _board
+	nop
+	leave
+	ret
+	.section .rdata,"dr"
+	.align 4

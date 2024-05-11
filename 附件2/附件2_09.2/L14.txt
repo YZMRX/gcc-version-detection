@@ -1,0 +1,7 @@
+L14:
+	cmpl	$15, -12(%ebp)
+	jg	L11
+	movl	$LC1, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movl	$0, -16(%ebp)

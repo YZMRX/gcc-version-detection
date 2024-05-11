@@ -1,0 +1,19 @@
+L88:
+	movzbl	-240(%ebp), %eax
+	movzbl	%al, %eax
+	cmpl	$1, %eax
+	jne	L90
+	call	_clock
+	movl	%eax, %edx
+	movl	-236(%ebp), %eax
+	subl	%eax, %edx
+	cmpl	$100, %edx
+	setg	%al
+	testb	%al, %al
+	je	L91
+	movl	$8225280, -232(%ebp)
+	leal	-240(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Boss4showEv
+	movb	$0, -240(%ebp)
+	jmp	L90

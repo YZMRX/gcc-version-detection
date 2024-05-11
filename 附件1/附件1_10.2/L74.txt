@@ -1,0 +1,24 @@
+L74:
+	cmpl	$7, -44(%ebp)
+	jg	L69
+	movl	-44(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%ebp), %esi
+	addl	%esi, %eax
+	subl	$144, %eax
+	movzbl	(%eax), %eax
+	movzbl	%al, %eax
+	cmpl	$1, %eax
+	jne	L70
+	call	_clock
+	movl	-44(%ebp), %edx
+	sall	$4, %edx
+	leal	-24(%ebp), %ebx
+	addl	%ebx, %edx
+	subl	$156, %edx
+	movl	(%edx), %edx
+	subl	%edx, %eax
+	cmpl	$20, %eax
+	jle	L70
+	movl	$1, %eax
+	jmp	L71

@@ -1,0 +1,10 @@
+_main:
+	leal	4(%esp), %ecx
+	andl	$-16, %esp
+	pushl	-4(%ecx)
+	pushl	%ebp
+	movl	%esp, %ebp
+	pushl	%ecx
+	subl	$36, %esp
+	call	___main
+	jmp	L50

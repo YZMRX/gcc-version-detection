@@ -1,0 +1,12 @@
+__Z41__static_initialization_and_destruction_0ii:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$24, %esp
+	cmpl	$1, 8(%ebp)
+	jne	L62
+	cmpl	$65535, 12(%ebp)
+	jne	L62
+	movl	$__ZStL8__ioinit, %ecx
+	call	__ZNSt8ios_base4InitC1Ev
+	movl	$___tcf_0, (%esp)
+	call	_atexit

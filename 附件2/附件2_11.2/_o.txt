@@ -1,0 +1,5 @@
+_o:
+	.space 1
+	.text
+	.globl	__Z4initv
+	.def	__Z4initv;	.scl	2;	.type	32;	.endef

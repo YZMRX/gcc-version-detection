@@ -1,0 +1,12 @@
+L52:
+	movl	$LC18, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movl	__imp___getch, %eax
+	call	*%eax
+	movb	%al, -9(%ebp)
+	cmpb	$89, -9(%ebp)
+	je	L50
+	cmpb	$121, -9(%ebp)
+	jne	L58
+	jmp	L50

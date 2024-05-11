@@ -1,0 +1,22 @@
+L78:
+	cmpl	$7, -48(%ebp)
+	jg	L76
+	movl	-48(%ebp), %eax
+	sall	$4, %eax
+	leal	-24(%ebp), %esi
+	addl	%esi, %eax
+	subl	$332, %eax
+	movzbl	(%eax), %eax
+	movzbl	%al, %eax
+	testl	%eax, %eax
+	jne	L77
+	leal	-368(%ebp), %edx
+	movl	-48(%ebp), %eax
+	sall	$4, %eax
+	addl	%eax, %edx
+	leal	-240(%ebp), %eax
+	movl	%edx, (%esp)
+	movl	%eax, %ecx
+	call	__ZN4Boss4fireER8E_Bullet
+	subl	$4, %esp
+	jmp	L76

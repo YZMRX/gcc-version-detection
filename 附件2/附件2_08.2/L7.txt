@@ -1,0 +1,11 @@
+L7:
+	cmpl	$15, -12(%ebp)
+	jg	L6
+	movl	-12(%ebp), %eax
+	addl	$64, %eax
+	movl	%eax, %edx
+	movl	-12(%ebp), %eax
+	addl	$_board, %eax
+	movb	%dl, (%eax)
+	addl	$1, -12(%ebp)
+	jmp	L7

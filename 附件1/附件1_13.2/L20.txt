@@ -1,0 +1,7 @@
+L20:
+	movl	-4(%ebp), %eax
+	movl	16(%eax), %eax
+	cmpl	$439, %eax
+	jle	L21
+	movl	-4(%ebp), %eax
+	movb	$1, 32(%eax)

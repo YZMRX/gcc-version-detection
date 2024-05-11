@@ -1,0 +1,6 @@
+__Z4initv:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$16, %esp
+	movl	$0, -4(%ebp)
+	jmp	L2

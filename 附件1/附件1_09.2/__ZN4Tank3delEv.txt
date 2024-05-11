@@ -1,0 +1,97 @@
+__ZN4Tank3delEv:
+	pushl	%ebp
+	movl	%esp, %ebp
+	pushl	%edi
+	pushl	%esi
+	pushl	%ebx
+	subl	$44, %esp
+	movl	%ecx, -28(%ebp)
+	movl	$0, (%esp)
+	call	__Z12setfillcolorm
+	movl	$0, (%esp)
+	call	__Z12setlinecolorm
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	25(%eax), %ebx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	leal	25(%eax), %ecx
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	-25(%eax), %edx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	subl	$25, %eax
+	movl	%ebx, 12(%esp)
+	movl	%ecx, 8(%esp)
+	movl	%edx, 4(%esp)
+	movl	%eax, (%esp)
+	call	__Z13fillrectangleiiii
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	25(%eax), %ebx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	leal	25(%eax), %ecx
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	-25(%eax), %edx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	subl	$25, %eax
+	movl	%ebx, 12(%esp)
+	movl	%ecx, 8(%esp)
+	movl	%edx, 4(%esp)
+	movl	%eax, (%esp)
+	call	__Z9rectangleiiii
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	-5(%eax), %ebx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	leal	40(%eax), %ecx
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	5(%eax), %edx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	movl	%ebx, 12(%esp)
+	movl	%ecx, 8(%esp)
+	movl	%edx, 4(%esp)
+	movl	%eax, (%esp)
+	call	__Z13fillrectangleiiii
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	-5(%eax), %ebx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	leal	40(%eax), %ecx
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	5(%eax), %edx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	movl	%ebx, 12(%esp)
+	movl	%ecx, 8(%esp)
+	movl	%edx, 4(%esp)
+	movl	%eax, (%esp)
+	call	__Z9rectangleiiii
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	movl	%eax, %esi
+	movl	-28(%ebp), %eax
+	movl	16(%eax), %eax
+	movl	%eax, %edi
+	movl	%esi, %eax
+	movl	%edi, %edx
+	addl	$44, %esp
+	popl	%ebx
+	popl	%esi
+	popl	%edi
+	popl	%ebp
+	ret
+	.section	.text$_ZN4Tank4fireER6Bullet,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN4Tank4fireER6Bullet
+	.def	__ZN4Tank4fireER6Bullet;	.scl	2;	.type	32;	.endef

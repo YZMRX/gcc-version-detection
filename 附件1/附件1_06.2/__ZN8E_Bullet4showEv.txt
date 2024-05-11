@@ -1,0 +1,46 @@
+__ZN8E_Bullet4showEv:
+	pushl	%ebp
+	movl	%esp, %ebp
+	pushl	%edi
+	pushl	%esi
+	pushl	%ebx
+	subl	$44, %esp
+	movl	%ecx, -28(%ebp)
+	movl	$1357055, (%esp)
+	call	__Z12setfillcolorm
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	leal	5(%eax), %edi
+	movl	-28(%ebp), %eax
+	movl	4(%eax), %eax
+	leal	5(%eax), %ecx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	leal	-5(%eax), %edx
+	movl	-28(%ebp), %eax
+	movl	4(%eax), %eax
+	subl	$5, %eax
+	movl	%edi, 12(%esp)
+	movl	%ecx, 8(%esp)
+	movl	%edx, 4(%esp)
+	movl	%eax, (%esp)
+	call	__Z13fillrectangleiiii
+	movl	-28(%ebp), %eax
+	movl	4(%eax), %eax
+	movl	%eax, %ebx
+	movl	-28(%ebp), %eax
+	movl	8(%eax), %eax
+	movl	%eax, %esi
+	movl	%ebx, %eax
+	movl	%esi, %edx
+	addl	$44, %esp
+	popl	%ebx
+	popl	%esi
+	popl	%edi
+	popl	%ebp
+	ret
+	.section	.text$_ZN8E_Bullet3delEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN8E_Bullet3delEv
+	.def	__ZN8E_Bullet3delEv;	.scl	2;	.type	32;	.endef

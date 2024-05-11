@@ -1,0 +1,20 @@
+L82:
+	cmpl	$7, -52(%ebp)
+	jle	L87
+	movzbl	-204(%ebp), %eax
+	movzbl	%al, %eax
+	cmpl	$1, %eax
+	jne	L88
+	call	_clock
+	movl	-184(%ebp), %edx
+	subl	%edx, %eax
+	cmpl	$100, %eax
+	setg	%al
+	testb	%al, %al
+	je	L89
+	movl	$13808790, -192(%ebp)
+	leal	-204(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZN4Tank4showEv
+	movb	$0, -204(%ebp)
+	jmp	L88

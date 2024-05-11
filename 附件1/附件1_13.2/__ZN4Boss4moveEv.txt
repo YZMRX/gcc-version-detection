@@ -1,0 +1,15 @@
+__ZN4Boss4moveEv:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$4, %esp
+	movl	%ecx, -4(%ebp)
+	movl	-4(%ebp), %eax
+	movzbl	32(%eax), %eax
+	movzbl	%al, %eax
+	cmpl	$1, %eax
+	jne	L19
+	movl	-4(%ebp), %eax
+	movl	16(%eax), %eax
+	leal	-5(%eax), %edx
+	movl	-4(%ebp), %eax
+	movl	%edx, 16(%eax)

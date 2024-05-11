@@ -1,0 +1,8 @@
+L43:
+	testl	%ebx, %ebx
+	js	L42
+	movl	%esi, %ecx
+	call	__ZN8E_BulletC1Ev
+	addl	$16, %esi
+	subl	$1, %ebx
+	jmp	L43

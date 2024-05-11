@@ -1,0 +1,82 @@
+L47:
+	cmpl	$15, -20(%ebp)
+	jg	L38
+	movl	-16(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-20(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	$98, %al
+	jne	L39
+	movl	-16(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-20(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %edx
+	movl	-16(%ebp), %eax
+	addl	$1, %eax
+	sall	$4, %eax
+	movl	%eax, %ecx
+	movl	-20(%ebp), %eax
+	addl	%ecx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	%al, %dl
+	jne	L39
+	movl	-16(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-20(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %edx
+	movl	-16(%ebp), %eax
+	addl	$2, %eax
+	sall	$4, %eax
+	movl	%eax, %ecx
+	movl	-20(%ebp), %eax
+	addl	%ecx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	%al, %dl
+	jne	L39
+	movl	-16(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-20(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %edx
+	movl	-16(%ebp), %eax
+	addl	$3, %eax
+	sall	$4, %eax
+	movl	%eax, %ecx
+	movl	-20(%ebp), %eax
+	addl	%ecx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	%al, %dl
+	jne	L39
+	movl	-16(%ebp), %eax
+	sall	$4, %eax
+	movl	%eax, %edx
+	movl	-20(%ebp), %eax
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %edx
+	movl	-16(%ebp), %eax
+	addl	$4, %eax
+	sall	$4, %eax
+	movl	%eax, %ecx
+	movl	-20(%ebp), %eax
+	addl	%ecx, %eax
+	addl	$_board, %eax
+	movzbl	(%eax), %eax
+	cmpb	%al, %dl
+	jne	L39
+	movl	$0, %eax
+	jmp	L36

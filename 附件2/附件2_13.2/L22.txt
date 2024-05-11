@@ -1,0 +1,13 @@
+L22:
+	cmpb	$0, -60(%ebp)
+	je	L23
+	movzbl	-49(%ebp), %eax
+	movsbl	%al, %eax
+	leal	-64(%eax), %edx
+	movzbl	-50(%ebp), %eax
+	movsbl	%al, %eax
+	subl	$64, %eax
+	sall	$4, %edx
+	addl	%edx, %eax
+	addl	$_board, %eax
+	movb	$119, (%eax)

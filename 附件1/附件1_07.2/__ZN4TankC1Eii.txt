@@ -1,0 +1,25 @@
+__ZN4TankC1Eii:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$4, %esp
+	movl	%ecx, -4(%ebp)
+	movl	-4(%ebp), %eax
+	movb	$0, (%eax)
+	movl	-4(%ebp), %eax
+	movl	$100, 4(%eax)
+	movl	-4(%ebp), %eax
+	movl	$13808790, 12(%eax)
+	movl	-4(%ebp), %eax
+	movl	8(%ebp), %edx
+	movl	%edx, 8(%eax)
+	movl	-4(%ebp), %eax
+	movl	12(%ebp), %edx
+	movl	%edx, 16(%eax)
+	nop
+	leave
+	ret	$8
+	.section	.text$_ZN4Tank4showEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN4Tank4showEv
+	.def	__ZN4Tank4showEv;	.scl	2;	.type	32;	.endef

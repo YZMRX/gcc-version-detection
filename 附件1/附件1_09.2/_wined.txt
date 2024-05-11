@@ -1,0 +1,7 @@
+_wined:
+	.space 1
+	.section	.text$_ZN8E_Bullet4showEv,"x"
+	.linkonce discard
+	.align 2
+	.globl	__ZN8E_Bullet4showEv
+	.def	__ZN8E_Bullet4showEv;	.scl	2;	.type	32;	.endef

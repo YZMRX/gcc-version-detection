@@ -1,0 +1,5 @@
+L6:
+	cmpl	$15, -12(%ebp)
+	jle	L7
+	movl	$1, -16(%ebp)
+	jmp	L8

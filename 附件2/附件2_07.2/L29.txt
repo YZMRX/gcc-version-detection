@@ -1,0 +1,5 @@
+L29:
+	cmpl	$225, -4(%ebp)
+	jne	L35
+	movl	$2, %eax
+	jmp	L36

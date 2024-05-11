@@ -1,0 +1,11 @@
+L94:
+	movl	$254, (%esp)
+	call	__Z12settextcolorm
+	movl	$LC0, 8(%esp)
+	movl	$0, 4(%esp)
+	movl	$35, (%esp)
+	call	__Z12settextstyleiiPKc
+	movl	$LC5, 8(%esp)
+	movl	$200, 4(%esp)
+	movl	$140, (%esp)
+	call	__Z9outtextxyiiPKc

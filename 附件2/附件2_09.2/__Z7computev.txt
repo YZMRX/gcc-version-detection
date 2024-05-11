@@ -1,0 +1,6 @@
+__Z7computev:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$32, %esp
+	movl	$0, -4(%ebp)
+	movl	$1, -8(%ebp)

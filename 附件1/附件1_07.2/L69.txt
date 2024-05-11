@@ -1,0 +1,11 @@
+L69:
+	call	_clock
+	movl	%eax, %edx
+	movl	-212(%ebp), %eax
+	subl	%eax, %edx
+	movl	%edx, %eax
+	cmpl	$700, %eax
+	setg	%al
+	testb	%al, %al
+	je	L75
+	movl	$0, -48(%ebp)

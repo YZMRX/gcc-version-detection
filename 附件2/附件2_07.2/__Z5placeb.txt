@@ -1,0 +1,39 @@
+__Z5placeb:
+	pushl	%ebp
+	movl	%esp, %ebp
+	pushl	%edi
+	pushl	%esi
+	pushl	%ebx
+	subl	$124, %esp
+	movl	8(%ebp), %eax
+	movb	%al, -60(%ebp)
+	movl	$___gxx_personality_sj0, -88(%ebp)
+	movl	$LLSDA1532, -84(%ebp)
+	leal	-80(%ebp), %eax
+	leal	-24(%ebp), %ebx
+	movl	%ebx, (%eax)
+	movl	$L25, %edx
+	movl	%edx, 4(%eax)
+	movl	%esp, 8(%eax)
+	leal	-112(%ebp), %eax
+	movl	%eax, (%esp)
+	call	__Unwind_SjLj_Register
+	leal	-48(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev
+	movb	$32, -50(%ebp)
+	movzbl	-50(%ebp), %eax
+	movb	%al, -49(%ebp)
+	movl	$LC3, (%esp)
+	movl	$1, -108(%ebp)
+	call	_system
+	call	__Z7displayv
+	movzbl	-60(%ebp), %eax
+	xorl	$1, %eax
+	testb	%al, %al
+	je	L16
+	leal	-48(%ebp), %eax
+	movl	$LC4, (%esp)
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEPKc
+	subl	$4, %esp

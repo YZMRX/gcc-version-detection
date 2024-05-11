@@ -1,0 +1,9 @@
+L8:
+	cmpl	$15, -16(%ebp)
+	jle	L9
+	movb	$42, _board
+	nop
+	leave
+	ret
+	.section .rdata,"dr"
+	.align 4

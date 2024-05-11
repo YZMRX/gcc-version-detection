@@ -1,0 +1,7 @@
+L21:
+	movl	-4(%ebp), %eax
+	movl	16(%eax), %eax
+	cmpl	$40, %eax
+	jg	L23
+	movl	-4(%ebp), %eax
+	movb	$0, 32(%eax)
